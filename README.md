@@ -4,6 +4,17 @@
 > B) Create a README file that includes notes describing where in the code to find the changes you made for each of parts C to J. Each note should include the prompt, file name, line number, and change.
 
 > C) Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
+>> mainscreen.html
+>>
+>> line 13 - Changed the title to "The Phone Doctor"
+>>
+>> line 16 - Added a h1 site title to "The Phone Doctor"
+>>
+>> line 19 - Changed the h1 title to "Home"
+>>
+>> line 21 - Changed the h2 title to "Repair and Replacement"
+>>
+>> line 53 - Changed the h2 title to "Accessories and Retail"
 
 
 > D) Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
