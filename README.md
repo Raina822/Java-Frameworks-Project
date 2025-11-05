@@ -18,6 +18,33 @@
 
 
 > D) Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
+>> mainscreen.html
+>>
+>> line 14 - linked mainscreen.html to demo.css
+>>
+>> lines 17-25 - Created a header that includes the site title and navigation to the about.html and mainscreen.html pages
+>
+>> about.html
+>>
+>> created about.html
+>>
+>> lines 1-25 were copied from mainscreen.html so both pages have the same header
+>>
+>> line 21 & 22 - Changed the active link to the about.html page
+>>
+>> lines 26 - 33 - Added an About h1 title and a paragraph about the company
+>
+>> demo.css
+>>
+>> lines 1-37 - Added styles for the header and navigation
+>
+>> aboutController.java
+>>
+>> created aboutController.java
+>>
+>> line 6 - Added @Controller annotation
+>>
+>> line 8-11 - created a method that returns the about.html page
 
 > E) Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 

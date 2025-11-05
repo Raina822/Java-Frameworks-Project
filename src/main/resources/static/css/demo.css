@@ -1,0 +1,47 @@
+:root{
+    /* VARIABLE COLORS */
+    --color1:#003B6D;
+    --color2:#6699CC;
+    --color3:#676767;
+    --color4:#BDBDBD;
+}
+
+.header {
+  overflow: hidden;
+  background-color: var(--color1);
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: var(--color3);
+  color: White;
+}
+
+.header a.active {
+  background-color: var(--color2);
+  color: white;
+}
+.siteTitle {
+  font-size: 40px;
+  padding-left: 15%;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  padding-left: 45%;
+}
