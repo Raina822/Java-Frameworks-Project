@@ -61,6 +61,35 @@
 >  - The “Buy Now” button must be next to the buttons that update and delete products.
 >  - The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
 >  - Display a message that indicates the success or failure of a purchase.
+>> mainscreen.html
+>>
+>> line 58 - Added the buy now button for parts
+>>
+>> line 95 - Added the buy now button for products
+>>
+>> AddProductController.java
+>> 
+>> lines 176-195 - Created a method that decrements the inventory of the product by one and if there is not enough inventory, it return the Failure.html page and if it is successful, it returns the Success.html page
+>>
+>> Success.html
+>>
+>> created Success.html
+>>
+>> line 12 - Added a h1 title that says "Purchase Successful!"
+>>
+>> line 14 - Created a link to the main screen
+>>
+>> Failure.html
+>>
+>> created Failure.html
+>>
+>> line 12 - Added a h1 title that says "Purchase not successful!"
+>>
+>> line 14 - Created a link to the main screen
+>>
+>> AddPartController.java
+>>
+>> lines 176-195 - Created a method that decrements the inventory of the part by one and if there is not enough inventory, it return the Failure.html page and if it is successful, it returns the Success.html page
 
 > G) Modify the parts to track maximum and minimum inventory by doing the following:
 > - Add additional fields to the part entity for maximum and minimum inventory.

@@ -3,6 +3,7 @@ package com.example.demo.controllers;
 import com.example.demo.domain.InhousePart;
 import com.example.demo.domain.OutsourcedPart;
 import com.example.demo.domain.Part;
+import com.example.demo.domain.Product;
 import com.example.demo.repositories.PartRepository;
 import com.example.demo.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,5 +65,24 @@ public class AddPartController {
             return "negativeerror";
         }
     }
+    @GetMapping("/buyPart")
+    public String buyPart(@RequestParam("partID") int theId, Model theModel) {
+        PartService partService = context.getBean(PartServiceImpl.class);
+        Part part2=partService.findById(theId);
+        int inv = part2.getInv();
 
+        if(inv==0) {
+            return "Failure";
+        } else {
+            //reduce inv value by 1
+            part2.setInv(inv - 1);
+            //set new value of part inventory
+            part2.setInv(part2.getInv());
+            //save part object with new inventory value
+            partService.save(part2);
+
+
+            return "Success";
+        }
+    }
 }
