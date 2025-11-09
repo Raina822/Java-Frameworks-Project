@@ -47,6 +47,15 @@
 >> line 8-11 - created a method that returns the about.html page
 
 > E) Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
+>> BootStrapData.java
+>>
+>> lines 59-116 - Added 5 parts to the part repository
+>>
+>> line 117-139 - Added 5 products to the product repository
+> >
+>> application.properties
+>>
+>> line 6 - Added a number to the end of the database name to make it unique
 
 > F) Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 >  - The “Buy Now” button must be next to the buttons that update and delete products.
