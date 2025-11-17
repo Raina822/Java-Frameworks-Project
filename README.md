@@ -97,6 +97,55 @@
 > - Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
 > - Rename the file the persistent storage is saved to.
 > - Modify the code to enforce that the inventory is between or at the minimum and maximum value.
+>> Part.java
+>>
+>> lines 33-38 - Added maximum and minimum inventory fields
+>>
+>> lines 67-76- Added getters and setters for maximum and minimum inventory fields
+>>
+>> line 23 - Added the @ValidInventory to link the validator to the part entity
+>> mainscreen.html
+>>
+>> lines 47, 48, 57, 58 - Added the maximum and minimum inventory fields to the part table
+>>
+>> BootStrapData.java
+>>
+>> lines 70, 71, 83, 84, 96, 97, 109, 110, 123, 124 - Added the maximum and minimum inventory fields to each part
+>>
+>> application.properties
+>>
+>> line 6 - Renamed the file the persistent storage is saved to
+>>
+>> InhousePartForm.html
+>>
+>> lines 24-30 - Added the maximum and minimum inventory text fields
+>>
+>> lines 16, 18, 21, 24 - Added field labels for Name, Price, ID, and Inventory
+>>
+>> lines 33-37 - Added code that checks for any errors  
+>>
+>> OutsourcedPartForm.html
+>>
+>> lines 12-14 - Added the maximum and minimum inventory text fields
+>>
+>> lines 17, 19, 22, 25 - Added field labels for Name, Price, and Inventory, Company Name
+>>
+>> lines 33-37 - Added code that checks for any errors
+>>
+>> InventoryValidator.java
+>>
+>> created InventoryValidator.java
+>>
+>> Lines 31-40 - Created an if statement that checks if the inventory is between or at the minimum and maximum value
+>>
+>> ValidInventory.java
+>>
+>> created ValidInventory.java
+>>
+>> Line 16 - Created a class that implements the Validator interface
+>>
+>> Line 20 - Added "Inventory Error!" message  
+
 
 > H) Add validation for between or at the maximum and minimum fields. The validation must include the following:
 > - Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.

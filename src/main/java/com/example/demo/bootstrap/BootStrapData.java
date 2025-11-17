@@ -67,6 +67,8 @@ public class BootStrapData implements CommandLineRunner {
             screenReplacement.setInv(20);
             screenReplacement.setPrice(80.0);
             screenReplacement.setId(5);
+            screenReplacement.setMinInv(1);
+            screenReplacement.setMaxInv(50);
 
             partRepository.save(screenReplacement);
 
@@ -78,6 +80,8 @@ public class BootStrapData implements CommandLineRunner {
             cameraRepair.setInv(10);
             cameraRepair.setPrice(100.0);
             cameraRepair.setId(10);
+            cameraRepair.setMinInv(1);
+            cameraRepair.setMaxInv(50);
 
             partRepository.save(cameraRepair);
 
@@ -89,6 +93,8 @@ public class BootStrapData implements CommandLineRunner {
             simReplacement.setInv(15);
             simReplacement.setPrice(20.0);
             simReplacement.setId(15);
+            simReplacement.setMinInv(1);
+            simReplacement.setMaxInv(50);
 
             partRepository.save(simReplacement);
 
@@ -100,6 +106,8 @@ public class BootStrapData implements CommandLineRunner {
             micRepair.setInv(20);
             micRepair.setPrice(45.0);
             micRepair.setId(20);
+            micRepair.setMinInv(1);
+            micRepair.setMaxInv(50);
 
             partRepository.save(micRepair);
 
@@ -112,6 +120,8 @@ public class BootStrapData implements CommandLineRunner {
             speakerRepair.setInv(5);
             speakerRepair.setPrice(80.0);
             speakerRepair.setId(25);
+            speakerRepair.setMinInv(1);
+            speakerRepair.setMaxInv(50);
             outsourcedPartRepository.save(speakerRepair);
         }
 
