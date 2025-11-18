@@ -151,7 +151,34 @@
 > - Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
 > - Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
 > - Display error messages when adding and updating parts if the inventory is greater than the maximum.
-
+>> InventoryValidator.java
+>>
+>> Line 34 & 38 - Corrected typo
+>>
+>> EnufPartsValidator.java
+>>
+>> Lines 36-39 - Corrected if statement to check if the inventory is below the minimum for parts when adding or updating products
+>>
+>> confirmationaddpart.html
+>>
+>> Line 5 - Changed refresh rate from 0 to 5 seconds so user can see the message.
+>>
+>> confirmationaddproduct.html
+>>
+>> Line 5 - Changed refresh rate from 0 to 5 seconds so user can see the message.
+>>
+>> confirmationassocpart.html
+>>
+>> Line 5 - Changed refresh rate from 0 to 5 seconds so user can see the message.
+>>
+>> productForm.html
+>>
+>> lines 17, 19, 22 - Added field labels for Name, Price, and Inventory
+>>
+>> application.properties
+>>
+>> line 6 - Renamed the file the persistent storage is saved to
+>>
 > I) Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
 > J) Remove the class files for any unused validators in order to clean your code.

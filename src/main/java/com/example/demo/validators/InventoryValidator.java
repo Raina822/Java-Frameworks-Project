@@ -31,11 +31,11 @@ public class InventoryValidator implements ConstraintValidator<ValidInventory, P
         if(part.getInv() >part.getMaxInv())
         {
             // display error message when inventory is greater than max inventory
-            constraintValidatorContext.buildConstraintViolationWithTemplate("Solution: Fix your inventory, it is less than the max inventory").addConstraintViolation();
+            constraintValidatorContext.buildConstraintViolationWithTemplate("Solution: Fix your inventory, so it is less than the max inventory").addConstraintViolation();
             return false;
         } else if(part.getInv() <part.getMinInv())
         {
-            constraintValidatorContext.buildConstraintViolationWithTemplate("Solution: Fix your inventory, it is greater than the min inventory").addConstraintViolation();
+            constraintValidatorContext.buildConstraintViolationWithTemplate("Solution: Fix your inventory, so it is greater than the min inventory").addConstraintViolation();
             return false;
         }
 
