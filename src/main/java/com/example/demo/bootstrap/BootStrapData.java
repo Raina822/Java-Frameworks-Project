@@ -60,91 +60,91 @@ public class BootStrapData implements CommandLineRunner {
         if(partRepository.count()==0) {
 
             //creating an object from the inhouse part
-            InhousePart screenReplacement = new InhousePart();
+            InhousePart phoneScreen = new InhousePart();
 
             //setting the values
-            screenReplacement.setName("Screen Replacement");
-            screenReplacement.setInv(20);
-            screenReplacement.setPrice(80.0);
-            screenReplacement.setId(5);
-            screenReplacement.setMinInv(1);
-            screenReplacement.setMaxInv(50);
+            phoneScreen.setName("Phone Screen");
+            phoneScreen.setInv(20);
+            phoneScreen.setPrice(60.0);
+            phoneScreen.setId(5);
+            phoneScreen.setMinInv(1);
+            phoneScreen.setMaxInv(50);
 
-            partRepository.save(screenReplacement);
+            partRepository.save(phoneScreen);
 
             //creating an object from the inhouse part
-            InhousePart cameraRepair = new InhousePart();
+            InhousePart cameraPart = new InhousePart();
 
             //setting the values
-            cameraRepair.setName("Camera Repair");
-            cameraRepair.setInv(10);
-            cameraRepair.setPrice(100.0);
-            cameraRepair.setId(10);
-            cameraRepair.setMinInv(1);
-            cameraRepair.setMaxInv(50);
+            cameraPart.setName("Camera Part");
+            cameraPart.setInv(10);
+            cameraPart.setPrice(60.0);
+            cameraPart.setId(10);
+            cameraPart.setMinInv(1);
+            cameraPart.setMaxInv(50);
 
-            partRepository.save(cameraRepair);
+            partRepository.save(cameraPart);
 
             //creating an object from the inhouse part
-            InhousePart simReplacement = new InhousePart();
+            InhousePart simSD = new InhousePart();
 
             //setting the values
-            simReplacement.setName("Sim Card & SD Card Tray Replacement");
-            simReplacement.setInv(15);
-            simReplacement.setPrice(20.0);
-            simReplacement.setId(15);
-            simReplacement.setMinInv(1);
-            simReplacement.setMaxInv(50);
+            simSD.setName("Sim Card & SD Card Tray");
+            simSD.setInv(15);
+            simSD.setPrice(20.0);
+            simSD.setId(15);
+            simSD.setMinInv(1);
+            simSD.setMaxInv(50);
 
-            partRepository.save(simReplacement);
+            partRepository.save(simSD);
 
             //creating an object from the inhouse part
-            InhousePart micRepair = new InhousePart();
+            InhousePart micPart = new InhousePart();
 
             //setting the values
-            micRepair.setName("Microphone Repair");
-            micRepair.setInv(20);
-            micRepair.setPrice(45.0);
-            micRepair.setId(20);
-            micRepair.setMinInv(1);
-            micRepair.setMaxInv(50);
+            micPart.setName("Microphone Part");
+            micPart.setInv(20);
+            micPart.setPrice(20.0);
+            micPart.setId(20);
+            micPart.setMinInv(1);
+            micPart.setMaxInv(50);
 
-            partRepository.save(micRepair);
+            partRepository.save(micPart);
 
             //creating an object from the outsourced part
-            OutsourcedPart speakerRepair= new OutsourcedPart();
+            OutsourcedPart speakerPart= new OutsourcedPart();
 
             //setting the values
-            speakerRepair.setCompanyName("Western Governors University");
-            speakerRepair.setName("Speaker Repair");
-            speakerRepair.setInv(5);
-            speakerRepair.setPrice(80.0);
-            speakerRepair.setId(25);
-            speakerRepair.setMinInv(1);
-            speakerRepair.setMaxInv(50);
-            outsourcedPartRepository.save(speakerRepair);
+            speakerPart.setCompanyName("Western Governors University");
+            speakerPart.setName("Speaker Part");
+            speakerPart.setInv(5);
+            speakerPart.setPrice(65.0);
+            speakerPart.setId(25);
+            speakerPart.setMinInv(1);
+            speakerPart.setMaxInv(50);
+            outsourcedPartRepository.save(speakerPart);
         }
 
         if(productRepository.count()==0) {
             //creating an object from the product class
-            Product screenProtector = new Product("Tempered Glass Screen Protector", 60.0, 10);
-            productRepository.save(screenProtector);
+            Product crackedScreenRepair = new Product("Cracked Screen Repair", 80.0, 10);
+            productRepository.save(crackedScreenRepair);
 
             //creating an object from the product class
-            Product lightningCable = new Product("Lightning Charging Cable", 15.0, 18);
-            productRepository.save(lightningCable);
+            Product cameraRepair = new Product("Camera Repair", 100.0, 18);
+            productRepository.save(cameraRepair);
 
             //creating an object from the product class
-            Product usbCCable = new Product("USB-C Charging Cable", 10.0, 20);
-            productRepository.save(usbCCable);
+            Product simSDInstall = new Product("Sim Card & SD Card Tray Install", 20.0, 20);
+            productRepository.save(simSDInstall);
 
             //creating an object from the product class
-            Product iPhoneCase = new Product("iPhone Phone Case", 55.0, 9);
-            productRepository.save(iPhoneCase);
+            Product microphoneRepair = new Product("Microphone Repair", 45.0, 9);
+            productRepository.save(microphoneRepair);
 
             //creating an object from the product class
-            Product samsungCase = new Product("Samsung Phone Case", 50.0, 11);
-            productRepository.save(samsungCase);
+            Product speakerRepair = new Product("Speaker Repair", 80.0, 11);
+            productRepository.save(speakerRepair);
         }
 
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();

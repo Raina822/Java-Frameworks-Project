@@ -12,9 +12,9 @@
 >>
 >> line 19 - Changed the h1 title to "Home"
 >>
->> line 21 - Changed the h2 title to "Repair and Replacement"
+>> line 21 - Changed the h2 title to "Replacement Parts"
 >>
->> line 53 - Changed the h2 title to "Accessories and Retail"
+>> line 53 - Changed the h2 title to "Repairs and Installs"
 
 
 > D) Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
@@ -49,13 +49,13 @@
 > E) Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 >> BootStrapData.java
 >>
->> lines 59-116 - Added 5 parts to the part repository
+>> lines 59-116 - Added 5 parts to the part repository, updated part names and prices on 11/18/25
 >>
->> line 117-139 - Added 5 products to the product repository
-> >
+>> line 117-139 - Added 5 products to the product repository, updated product names and prices on 11/18/25
+>> 
 >> application.properties
 >>
->> line 6 - Added a number to the end of the database name to make it unique
+>> line 6 - Added a number to the end of the database name to make it unique, updated the database name on 11/18/25
 
 > F) Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 >  - The “Buy Now” button must be next to the buttons that update and delete products.
