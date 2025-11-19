@@ -180,5 +180,8 @@
 >> line 6 - Renamed the file the persistent storage is saved to
 >>
 > I) Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
-
+>> PartTest.java
+>>
+>> lines 103-138 - Added tests for the maximum and minimum fields
+>>
 > J) Remove the class files for any unused validators in order to clean your code.

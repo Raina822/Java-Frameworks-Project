@@ -1,6 +1,6 @@
 package com.example.demo.domain;
 
-import org.junit.jupiter.api.BeforeEach;
+import   org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
@@ -99,6 +99,42 @@ class PartTest {
         assertEquals(inv,partIn.getInv());
         partOut.setInv(inv);
         assertEquals(inv,partOut.getInv());
+    }
+
+    @Test
+    void getMinInv(){
+        int minInv = 2;
+        partIn.setMinInv(minInv);
+        assertEquals(minInv,partIn.getMinInv());
+        partOut.setMinInv(minInv);
+        assertEquals(minInv,partOut.getMinInv());
+    }
+
+    @Test
+    void setMinInv(){
+        int minInv = 2;
+        partIn.setMinInv(minInv);
+        assertEquals(minInv,partIn.getMinInv());
+        partOut.setMinInv(minInv);
+        assertEquals(minInv,partOut.getMinInv());
+    }
+
+    @Test
+    void getMaxInv(){
+        int maxInv = 49;
+        partIn.setMaxInv(maxInv);
+        assertEquals(maxInv,partIn.getMaxInv());
+        partOut.setMaxInv(maxInv);
+        assertEquals(maxInv,partOut.getMaxInv());
+    }
+
+    @Test
+    void setMaxInv(){
+        int maxInv = 49;
+        partIn.setMaxInv(maxInv);
+        assertEquals(maxInv,partIn.getMaxInv());
+        partOut.setMaxInv(maxInv);
+        assertEquals(maxInv,partOut.getMaxInv());
     }
 
     @Test
