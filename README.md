@@ -185,3 +185,10 @@
 >> lines 103-138 - Added tests for the maximum and minimum fields
 >>
 > J) Remove the class files for any unused validators in order to clean your code.
+>> DeletePartValidator.java and ValidDeletePart.java
+>>
+>> Deleted unused validators
+>>
+>> Part.java
+>>
+>> line 18 - Removed the call and import for the unused validators in Part.java
